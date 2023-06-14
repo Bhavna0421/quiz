@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 400px;
+  width: 400px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+
+.start {
+  background-color: #276272;
+  color: white;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  font-size: larger;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.start:hover {
+  transform: translateY(-2px);
+}
+
+.question {
+  margin: 8px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: large;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  min-width: 100%;
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#question-number {
+  margin-right: 5px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin: 6px 4px;
+  width: 100%;
+  padding: 10px;
+}
+
+.option-btn {
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  margin: 5px;
+  min-height: 30px;
+  background-color: white;
+}
+
+.checked {
+  background-color: rgb(83, 179, 141);
+  color: white;
+}
+
+.option-btn:hover {
+  background-color: rgb(118, 212, 193);
+  color: white;
+}
+
+.next {
+  padding: 10px;
+  border: none;
+  background-color: #276272;
+  color: white;
+  border-radius: 5px;
+  font-size: larger;
+  font-weight: bold;
+  font-family: 'Times New Roman';
+  transition: background-color 0.2s, transform 0.2s;
+  width: 112px;
+  position: relative;
+}
+
+.next:hover {
+  background-color: #15505e;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.ReStart {
+  padding: 10px;
+  border: none;
+  background-color: #276272;
+  color: white;
+  border-radius: 5px;
+  font-size: larger;
+  font-weight: bold;
+  font-family: 'Times New Roman';
+  transition: background-color 0.2s, transform 0.2s;
+  width: 112px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.ReStart:hover {
+  background-color: #15505e;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.score {
+  position: relative;
+  top: 30%;
+  font-size: 15px;
+  text-align: center;
+}
